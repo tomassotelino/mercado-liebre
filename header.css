@@ -1,0 +1,31 @@
+header{
+    background-color:#EAC926; 
+    border-radius: 10px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.burger-menu{
+    background-color: #1259c3;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 45%;
+}
+
+.buscador{
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    padding-left: 2px;
+}
+
+a{
+    text-decoration: none; 
+    color: black;
+}

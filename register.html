@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iniciar sesion</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0232168cd7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./logo-mercado-liebre.svg" alt="logo-mercado-liebre" width="200px">
+            <div class="buscador">
+                <label for="lupa">buscar</label>
+                <input type="search" name="busqueda" id="lupa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div><br>
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+        Comprá en cuotas y sin tarjeta de crédito <br>
+    </header><br>
+    <main>
+        <div>
+            <section>
+                <h1>|Registro de Usuario</h1>
+                <div>
+                    <input class="register" type="text" name="nombre y apellido" id="nombre_y_apellido"
+                        placeholder="Nombre y Apellido"><br>
+                    <input class="register" type="text" name="nombre_de_usuario" id="nombre_de_usuario"
+                        placeholder="Nombre de usuario"><br>
+                    <input class="register" type="text" name="email" id="email" placeholder="Email"><br>
+                    <label class="titulo_register">Fecha de nacimiento</label><br>
+                    <input class="fecha_de_nacimiento" type="date" name="fecha de nacimiento"
+                        id="fecha_de_nacimiento"><br>
+                    <input class="register" type="text" name="domicilio" id="domicilio" placeholder="Domicilio"><br>
+                    <label class="titulo_register">Perfil del usuario</label><br>
+                    <div class="perfil">
+                        <input type="radio" name="vender" id="perfil_del_usuario">
+                        <label class="perfil_del_usuario" for="perfil_del_usuario">Vender</label>
+                        <input class="perfil_del_usuario" type="radio" name="comprar" id="perfil_del_usuario">
+                        <label class="perfil_del_usuario" for="perfil_del_usuario">Comprar</label><br>
+                    </div>
+                    <label class="interes">Interés:</label><br>
+                    <div class="perfil">
+                        <input class="perfil_del_usuario" type="checkbox" id="electro" name="interes" value="Electro">
+                        <label class="perfil_del_usuario" for="electro">Electro</label><br>
+                        <input class="perfil_del_usuario" type="checkbox" id="moda" name="interes" value="Moda">
+                        <label class="perfil_del_usuario" for="moda">Moda</label><br>
+                        <input class="perfil_del_usuario" type="checkbox" id="hogar" name="interes" value="Hogar">
+                        <label class="perfil_del_usuario" for="hogar">Hogar</label><br>
+                        <input class="perfil_del_usuario" type="checkbox" id="jugueteria" name="interes"
+                            value="Juguetería">
+                        <label class="perfil_del_usuario" for="jugueteria">Juguetería</label><br>
+                        <input class="perfil_del_usuario" type="checkbox" id="vida-sana" name="interes"
+                            value="Vida Sana">
+                        <label class="perfil_del_usuario" for="vida-sana">Vida Sana</label><br>
+                    </div>
+                    <label class="titulo_register" for="foto">Foto de Usuario:</label>
+                    <input class="foto" type="file" id="foto" name="foto" accept="image/*"><br>
+                    <input class="register" type="password" id="contrasena" name="contrasena" required
+                        placeholder="Contraseña"><br>
+                    <input class="register" type="password" id="confirmar-contrasena" name="confirmar-contrasena"
+                        required placeholder="Confirmar Contraseña"><br>
+                    <a href="./home.html"><input class="registrar" type="button" value="registrar"><br></a>
+                    <button class="registrar" type="reset">Borrar</button>
+                    </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="tarjeta"><i class="fa-solid fa-credit-card icon_footer"></i></div>
+        <div>
+            <h4><b>Pagá con tarjeta o en efectivo</b></h4>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+                efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </div>
+        <div class="regalo"><i class="fa-solid fa-gift icon_footer"></i></div>
+        <div>
+            <h4><b>Envío gratis desde $ 2.500</b></h4>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+                miles de productos. Es un beneficio de Mercado Puntos.</p>
+        </div>
+        <div class="seguridad"><i class="fa-solid fa-user-shield icon_footer"></i></div>
+        <div>
+            <h4><b>Seguridad, de principio a fin</b></h4>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
+                puedas hacer, porque estás siempre protegid@.</p>
+        </div>
+        <div class="Copyright">
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
