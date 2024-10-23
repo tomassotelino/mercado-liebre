@@ -11,17 +11,53 @@
 
 <body>
     <header>
-        <div>
-            <a href="./home.html"><img src="./logo-mercado-liebre.svg" alt="logo-mercado-liebre" width="200px"></a>
-            <div class="buscador">
-                <label for="lupa">buscar</label>
-                <input type="search" name="busqueda" id="lupa">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-        </div><br>
-        <div class="frase"><i class="fa-solid fa-hand-holding-dollar"></i>
-        Comprá en cuotas y sin tarjeta de crédito <br></div>
-    </header><br>
+        <div class="flex">
+            <a class="logo" href="./home.html"><img src="./logo-mercado-liebre.svg" alt="logo-mercado-liebre"
+                    width="200px"></a>
+            <input class="buscador" type="search" name="busqueda" id="buscador" placeholder="buscar productos, marcas">
+            <span class="lupa"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <div class="frase"><i class="fa-solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin tarjeta de crédito </div>
+        </div>
+
+        <ul>
+            <nav class="categorias">
+                <span class="categorias-1">
+                    <li>
+                        <a href="">Ofertas</a>
+                    </li>
+                    <li>
+                        <a href="">Tiendas Oficiales</a>
+                    </li>
+                    <li>
+                        <a href="">Vender</a>
+                    </li>
+                    <li>
+                        <a href="">Ayuda</a>
+                    </li>
+                </span>
+            </nav>
+
+            <nav class="categorias">
+                <span class="categorias-2">
+                    <li><a href="./register.html">Crea tu cuenta</a>
+                        <i class="fa-regular fa-id-card"></i>
+                    </li>
+                    <li><a href="./login.html">Ingresa</a>
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </li>
+                    <li><a href="">Mis compras</a>
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </li>
+                </span>
+            </nav>
+        </ul>
+
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </header>
     <main>
         <div>
             <section>
@@ -60,10 +96,10 @@
                     </div>
                     <label class="titulo_register" for="foto">Foto de Usuario:</label>
                     <input class="foto" type="file" id="foto" name="foto" accept="image/*"><br>
-                    <input class="register" type="password" id="contrasena" name="contrasena" required
-                        placeholder="Contraseña"><br>
+                    <input class="register" type="password" id="contrasena" name="contrasena" 
+                        placeholder="Contraseña" required><br>
                     <input class="register" type="password" id="confirmar-contrasena" name="confirmar-contrasena"
-                        required placeholder="Confirmar Contraseña"><br>
+                            placeholder="Confirmar Contraseña" required><br>
                     <a href="./home.html"><input class="registrar" type="button" value="registrar"><br></a>
                     <button class="registrar" type="reset">Borrar</button>
                     </form>

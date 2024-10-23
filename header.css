@@ -1,14 +1,59 @@
 header {
     background-color: #EAC926;
-    border-radius: 10px;
     align-items: center;
     font-size: 12px;
 }
 
+@media screen and (max-width: 600px){
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+    .buscador{
+        
+        width: 45%;
+        padding: 4px;
+        border: none;
+        border-radius: 5px;
+        margin-left: 25px;
+        margin-top: 15px;
+        
+    }
+
+    .lupa{
+    
+        margin-left: -14px;
+        color: rgb(100, 100, 100);
+        margin-top: 27px ;
+    }
+    
+    .frase{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 39px;
+        font-size: 12px;
+}
+}
+
+
+.logo{
+    width: 40%;
+}
+
+.logo > img {
+    margin-top: 15px;
+    margin-left: 15px;
+    max-width: 100%;
+    
+}
+
+
 .burger-menu {
     background-color: #1259c3;
     width: 25px;
-    height: 25px;
+    height: 20px;
     text-align: center;
     padding-top: 5px;
     color: white;
@@ -16,9 +61,8 @@ header {
     margin-left: 45%;
 }
 
-.buscador {
-    text-align: center;
-}
+
+
 
 ul {
     list-style: none;
@@ -34,13 +78,14 @@ a {
     display: none;
 }
 
-.frase{
-    text-align: center;
-    margin-bottom: 20px;
-}
+
 
 @media screen and (min-width:768px) {
 
+.flex{
+    display: ruby;
+    margin-bottom: 32px;
+}
 
     .burger-menu {
         display: none;
@@ -50,6 +95,51 @@ a {
         display: block;
         
     }
+
+    .categorias-1{
+        display: flex;
+        margin-left: 2px;
+        margin-bottom: -49px;
+    }
+
+    .categorias-1 > li{
+        padding-left: 22px;
+    }
+
+    .categorias-2{
+        display: flex;
+        margin-top: 35px;
+        margin-bottom: 1;
+        margin-left: 464px;
+    }
+
+    .categorias-2 > li{
+        padding-right: 22px;
+    }
+
+    header{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+
+
+    .frase{
+        margin-left: 16px;
+    margin-right: -34px;
+    }
+
+    .logo > img{
+    margin-left: -50px;
+    margin-top: 20px;
+    margin-bottom: -19px;
+    }
+
+    .buscador{
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -58,7 +148,28 @@ a {
     }
 
     ul{
-        margin-left: 20px;
+        margin-left: 250px;
     }
+
+.categorias-1{
+    margin-left: -250px;
+}
+
+.frase{
+    margin-left: 100px;
+    
+}
+.buscador{
+    margin-left:20px;
+    width: 21%;
+
+}
+
+.logo > img{
+    width: 50%;
+    margin-top:15px;
+    margin-left: -160px;
+}
+
 
 }

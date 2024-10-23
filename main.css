@@ -5,15 +5,29 @@ main{
 
 .articulo{
     background-color: #ffffff;
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
+    
     margin-bottom: 10px;
+}
+
+.flex-2{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.descuentos-{
+    margin-top: 2px;
 }
 
 
 .img{
     text-align: center;
     margin-bottom: 20px;
+}
+
+.img > img{
+    max-width: 100%;
 }
 
 
@@ -23,6 +37,7 @@ p{
 
 .titulo{
     font-size: 24px;
+    margin-top: 50px;
 }
 
 .precios{
@@ -32,9 +47,8 @@ p{
 }
 
 .descuentos{
-    margin-left: 15px;
+    margin-left: 5px;
     font-size: 16px;
-    margin-bottom: 15px;
     color: green;
 }
 
@@ -112,25 +126,34 @@ p{
     margin-top: 20px;
 }
 
-.camion > i{
-    font-size: 1rem;
-    margin-top: 20px;
-    margin-right: 13rem;
-    margin-left: 1rem;
+.camion{
     color: green;
-    border-radius: 60px;
-    outline: 1px solid green;
-    outline-offset:7px ;
-}
+    border: 1px solid green;
+    position: relative;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    top: -0.5rem;
+    margin-left: 80%;
+    }
 
 .descipcion{
     border-top: 1px solid #ebebeb;
-    display: none;
 }
 
 .N-producto{
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 15px;
+    padding-bottom: 1rem;
+}
+
+
+
+.banner > img {
+    display: none;
+    margin-top: -23px;
+    margin-left: -23px;
+    
 }
 
 @media screen and (min-width:768px) {
@@ -140,15 +163,40 @@ p{
 
     .articulo{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45% ;
+        margin-left: 0;
+    }
+
+    .banner > img {
+        display: block;
+        width: 106.4%;
+    }
+
+    .section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
     }
 
+
+    
 @media screen and (min-width:1024px) {
     .descipcion{
         display: block;
     }
 
     .articulo{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 20% ;
     }
+    .banner{
+        margin-left: -50px;
+        margin-top: -42px;
+    }
+    .banner > img {
+        max-width: 105.3%;
+        margin-top: 42px;
+    }
+
+    
     }
